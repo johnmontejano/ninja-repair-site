@@ -1,3 +1,5 @@
+
+
 #hero  {
     background: url('https://i.postimg.cc/8z9n0SK7/bike-hero.png');
     background-position: center;
@@ -19,9 +21,7 @@
 #price-card {
     padding: 2rem 3.5rem;
 }
-#customers img{
-    width: 60%;
-}
+
 #customers {
     padding: 18px 10px 8px 10px;
     margin: none;
@@ -37,8 +37,10 @@ footer i:hover {
     color: rgb(19, 63, 110);
     transition: ease 200ms;
 }
-@media only screen and(max-width:500px){
-    #works img{
-        width: 30%
-    }
+#brands img{
+    width: 200px;
+}
+@media only screen and(max-width:460px){
+}
+@media only screen and(min-width:470px){
 }
