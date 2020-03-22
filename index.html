@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Bikelocity</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+<body>
+<div class="navbar-fixed">
+    <nav class="blue darken-3" role="navigation">
+        <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo right hide-on-med-and-up show-on-medium">Bikelocity</a>
+        <a id="logo-container" href="#" class="brand-logo left hide-on-med-and-down">Bikelocity</a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#">Navbar Link</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="sidenav">
+            <li><a href="#">Navbar Link</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+ </div>
+
+<section id="hero" class="section">
+    <div class="container">
+        <div class="row ">
+            <div class="col s12 m6 l12">
+                <h1>Bikelocity</h1>
+                <h5>On-demand bike repair Anytime, anywhere</h5>
+                <a href="" class="btn blue darken-3 waves-effect waves-light ">Start Repair Now</a>
+            </div>
+        </div>
+       
+    </div>
+
+    
+</section>
+<section class="section grey lighten-2" id="customers">
+    <div class="container" >
+            <div class="row center">
+                    <div class="col l4 m12">
+                        <img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/2018_Trek_logo_word_mark_wiki.svg/1280px-2018_Trek_logo_word_mark_wiki.svg.png" alt="">
+                    </div>
+                    <div class="col l4 m12">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/2018_Trek_logo_word_mark_wiki.svg/1280px-2018_Trek_logo_word_mark_wiki.svg.png" alt="">
+                    </div>
+                    <div class="col l4 m12">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/2018_Trek_logo_word_mark_wiki.svg/1280px-2018_Trek_logo_word_mark_wiki.svg.png" alt="">
+                    </div>
+                </div>
+    </div>
+</section>
+<section class="section" id="works">
+        <div class="container">
+            <h2>How it Works</h2>
+            <div  id="steps" class="row center">
+
+                <div class="col s12 l4 m4">
+                    <img src="https://i.postimg.cc/ryvYJPhc/undraw-Calculator-0evy.jpg" alt="">
+                    <h5><b>1.</b> Calculate Price</h5>
+                </div>
+
+                <div class="col s12 l4 m4">
+                    <img src="https://i.postimg.cc/zBy0wCKV/undraw-calendar-dutt.jpg"/>
+                    <h5><b>2.</b> Schedule Repair</h5>
+                </div>
+
+                <div class="col s12 l4 m4">
+                    <img src="https://i.postimg.cc/wvNDT0Dc/undraw-Ride-a-bicycle-2yok.jpg" alt="">
+                    <h5><b>3.</b> Mechanic meets you</h5>
+                </div>
+            </div>
+</section>
+
+<!-- PRICE CALCULATOR -->
+<section class="section">
+    <div class="container center">
+        <h3>Price Calculator</h3>
+        <div class="card" id="price-card">
+            <div class="card-container">
+                <img width="40%;" src="https://images.giant-bicycles.com/b_white,c_pad,h_400,q_80,w_600/mid7nkitgq05ujeznx1o/MY20TCRADV2-KOM_ColorA.jpg" alt="">
+                <h4 id="price-title">Price Range:</h4>
+                <form netlify name="repair" autocomplete="on" method="post">
+                    <div class="row">
+                        <!-- SELECT BRAND -->
+                        <div class="input-field col s12 l6 m6">
+                            <select id="selectBrand" onchange="myFunction()" name="brand" required>
+                                <option selected disabled>Select Make</option>
+                                <option value="trek">Trek</option>
+                                <option value="giant">Giant</option>
+                                <option value="cannondale">Cannondale</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <label>Select Make</label>
+                        </div>
+                        <!-- SELECT ISSUE -->
+                        <div class="input-field col s12 l6 m6">
+                            <select id="selectIssue" onchange="myFunction()" name="Issue" required>
+                                <option selected disabled>Select Issue</option>
+                                <option value="tire">Tire Replacement</option>
+                                <option value="chain">Chain Replacement</option>
+                                <option value="tune-up">Simple Tune Up</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <label>Select Issue</label>
+                        </div>
+                    </div>
+                    <h5>Customer info</h5>
+                    <div class="row">
+                            <div class="row ">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="icon_prefix" type="text" class="validate" required name="name">
+                                    <label for="icon_prefix">First Name</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">phone</i>
+                                    <input id="icon_telephone" type="tel" class="validate" required name="phone">
+                                    <label for="icon_telephone">Telephone</label>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="row">
+                            <div class="row ">
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">mail</i>
+                                    <input id="icon_prefix" type="text" class="validate" required name="email">
+                                    <label for="icon_prefix">Email</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">apartment</i>
+                                    <input id="icon_telephone" type="tel" class="validate" required name="address">
+                                    <label for="icon_telephone">Address</label>
+                                </div>
+                            </div>
+                    </div>
+
+                    <h5>Time & Date</h5>
+                    <div class="row center">
+                        <div class="input-field col s12 l6">
+                            <i class="material-icons prefix">event</i>
+                            <input type="text" id="date" placeholder="Enter Date" class="datepicker" name="date">
+                        </div>
+                        <div class="input-field col s12 l6">
+                            <i class="material-icons prefix">schedule</i>
+                            <input type="text" id="date" placeholder="Enter Time" class="timepicker" name="time">
+                        </div>
+                    </div>
+                    <a class="btn blue darken-3 waves-effect" type="submit">Book Now</a>
+
+            </div>
+        </form>
+        </div>
+    </div>
+</section>
+  <footer class="page-footer blue darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">BIKELOCITY</h5>
+          <div class="row">
+
+            <div class="col">
+                <i class="fab fa-twitter"></i>
+            </div>
+            <div class="col">
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="col">
+                <i class="fab fa-instagram"></i>
+            </div>
+
+          </div>
+        </div>
+        
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright blue darken-4">
+      <div class="container">
+       All rights Reserved  <a class="blue-text text-lighten-3" href="http://materializecss.com">BIKELOCITY&copy;</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pricing.js"></script>
+
+  </body>
+</html>

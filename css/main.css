@@ -1,0 +1,44 @@
+#hero  {
+    background: url('https://i.postimg.cc/8z9n0SK7/bike-hero.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 8rem 0 5rem 0;
+}
+#hero h5 {padding-bottom:15px;}
+#works {
+    float: none !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+#works img{
+    width: 40%;
+   
+}
+#price-card {
+    padding: 2rem 3.5rem;
+}
+#customers img{
+    width: 60%;
+}
+#customers {
+    padding: 18px 10px 8px 10px;
+    margin: none;
+}
+
+
+.picker__date-display { background-color: #6d4e7a; }
+
+footer i{
+    font-size: 20px;
+}
+footer i:hover {
+    color: rgb(19, 63, 110);
+    transition: ease 200ms;
+}
+@media only screen and(max-width:500px){
+    #works img{
+        width: 30%
+    }
+}
