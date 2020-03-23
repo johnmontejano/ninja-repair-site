@@ -1,5 +1,9 @@
-
-
+* {
+    /* scroll-behavior: smooth; */
+}
+.sidenav-overlay {
+   background: none !important;
+}
 #hero  {
     background: url('https://i.postimg.cc/8z9n0SK7/bike-hero.png');
     background-position: center;
@@ -28,6 +32,17 @@
 }
 
 
+.parallax-container{    
+    color: white;
+}
+.parallax{
+    height: 180px;
+}
+
+#get-started{
+    padding: 50px 0 0 0;
+    
+}
 .picker__date-display { background-color: #6d4e7a; }
 
 footer i{
