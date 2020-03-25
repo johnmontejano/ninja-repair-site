@@ -5,7 +5,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>Bikelocity</title>
-
+  <!-- bikelocity logo font -->
+  <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
@@ -16,18 +17,22 @@
 <body>
 
 <div class="navbar-fixed">
-    <nav class="blue darken-3" role="navigation">
+    <nav id="nav"  role="navigation">
         <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo right hide-on-med-and-up show-on-medium">Bikelocity</a>
-        <a id="logo-container" href="#" class="brand-logo left hide-on-med-and-down">Bikelocity</a>
+        <a id="logo-container" href="#" class="bikelocity-logo brand-logo right hide-on-med-and-up show-on-medium">Bikelocity</a>
+        <a id="logo-container" href="#" class="bikelocity-logo brand-logo left hide-on-med-and-down">Bikelocity</a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="#">Navbar Link</a></li>
+            <li><a href="#calculator">Repair</a></li>
+            <li><a href="#connect-with-us">Stay Connected</a></li>
+            <li><a href="mailto:company@bikelocity.com">Contact</a></li>
         </ul>
-
-        <ul id="nav-mobile" class="sidenav">
-            <li><a href="#">Navbar Link</a></li>
-        </ul>
+  
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul style="display: flex; flex-direction: column;"id="nav-mobile" class="sidenav">
+            <li class="light-font"><a href="#">Repair</a></li>
+            <li><a href="#connect-with-us">Stay Connected</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
         </div>
     </nav>
  </div>
@@ -36,14 +41,14 @@
     <div class="container">
         <div class="row ">
             <div class="col s12 m6 l12">
-                <h1>Bikelocity</h1>
-                <h5>On-demand bike repair Anytime, anywhere</h5>
+                <h1 class="bikelocity-logo">Bikelocity</h1>
+                <h5 style="font-weight: 200;">On-demand bike repair Anytime, anywhere</h5>
                 <div class="row">
                     <div class="col s6 l2">
-                        <a href="" class="btn btn-medium blue darken-3 waves-effect waves-light ">Repair Now</a>
+                        <a href="#calculator" class="btn btn-medium blue darken-3 waves-effect waves-light ">Repair Now</a>
                     </div>
                     <div class="col s6 l2">
-                        <a href="" class="btn btn-medium green ligten-1 waves-effect waves-light ">Call now</a>
+                        <a href="tel:415-111-1111" class="btn btn-medium green ligten-1 waves-effect waves-light ">Call now</a>
                     </div>
                 </div>
             </div>
@@ -53,17 +58,17 @@
 
     
 </section>
-<section class="section grey lighten-2" id="brands">
+<section class="section grey lighten-4" id="brands">
     <div class="container center" >
         <div class="row ">
                 <div class="col s12 m12 l4">
                     <img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/2018_Trek_logo_word_mark_wiki.svg/1280px-2018_Trek_logo_word_mark_wiki.svg.png" alt="">
                 </div>
                 <div class="col s12 m12 l4">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/2018_Trek_logo_word_mark_wiki.svg/1280px-2018_Trek_logo_word_mark_wiki.svg.png" alt="">
+                    <img src="img/cannondale.png" alt="">
                 </div>
                 <div class="col s12 m12 l4">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/2018_Trek_logo_word_mark_wiki.svg/1280px-2018_Trek_logo_word_mark_wiki.svg.png" alt="">
+                    <img src="img/specialized.png" alt="">
                 </div>
         </div>
     </div>
@@ -79,12 +84,12 @@
                 </div>
 
                 <div class="col s12 l4 m4">
-                    <img src="https://i.postimg.cc/zBy0wCKV/undraw-calendar-dutt.jpg"/>
+                    <img src="img/calendar.png"/>
                     <h5><b>2.</b> Schedule Repair</h5>
                 </div>
 
                 <div class="col s12 l4 m4">
-                    <img src="https://i.postimg.cc/wvNDT0Dc/undraw-Ride-a-bicycle-2yok.jpg" alt="">
+                    <img src="img/bicycle.png" alt="">
                     <h5><b>3.</b> Mechanic meets you</h5>
                 </div>
             </div>
@@ -93,9 +98,9 @@
 <!-- PRICE CALCULATOR -->
 <section class="section">
     <div class="container center">
-        <h3>Price Calculator</h3>
         <div class="card" id="price-card">
             <div class="card-container">
+                <h2>Price Calculator</h2>
                 <img width="40%;" src="https://images.giant-bicycles.com/b_white,c_pad,h_400,q_80,w_600/mid7nkitgq05ujeznx1o/MY20TCRADV2-KOM_ColorA.jpg" alt="">
                 <h4 id="price-title">Price Range:</h4>
                 <form  name="repair" autocomplete="on" method="POST" netlify>
@@ -164,7 +169,7 @@
                             <input type="text" id="date" placeholder="Enter Time" class="timepicker" name="time" required>
                         </div>
                     </div>
-                    <button class="btn blue darken-3 waves-effect" type="submit">Book Now</button>
+                    <button class="btn btn-large blue darken-3 waves-effect" type="submit">Book Now</button>
 
             </div>
         </form>
@@ -176,8 +181,9 @@
         <div class="parallax-container">
             <div class="parallax"><img  src="https://i.postimg.cc/RF0VgFZ3/bikeshop.png"></div>
             <div class="container" id="get-started">
-                <h3>Get Started Now</h3>
-                <a href="#calculator" class="btn btn-medium blue darken-2">Get Started</a>
+                <h1>Get Started Now</h1>
+                <h5>Repairing in more than 100 cities nationwide</h5>
+                <a href="#calculator" class="btn btn-large blue darken-2">Get Started</a>
             </div>
         </div>
     </section>
@@ -187,7 +193,8 @@
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="whitetext">BIKELOCITY</h5>
+          <h3 class="whitetext bikelocity-logo">bikelocity</h3>
+          <h5 class="large" id="connect-with-us" style="margin-bottom:15px;">Connect Wiith Us</h5>
           <div class="row">
 
             <div class="col">
@@ -199,28 +206,34 @@
             <div class="col">
                 <i class="fab fa-instagram"></i>
             </div>
+            <div class="col">
+                <i class="fab fa-reddit"></i>
+            </div>
 
           </div>
         </div>
         
         <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+          <h5 class="white-text">Common Services</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="#!">Tune-up</a></li>
+            <li><a class="white-text" href="#!">Chain</a></li>
+            <li><a class="white-text" href="#!">Tire Replacement Emergency</a></li>
+            <li><a class="white-text" href="#!">Brakes</a></li>
+
           </ul>
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="white-text" href="#!">Home</a></li>
+              <li><a class="white-text" href="#!">About</a></li>
+              <li><a class="white-text" href="#!">Conact</a></li>
+              <li><a class="white-text" href="#!">Repair Now</a></li>
+  
+            </ul>
+          </div>
+        
       </div>
     </div>
     <div class="footer-copyright blue darken-4">
@@ -236,6 +249,6 @@
   <script src="js/materialize.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/pricing.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&libraries=places"></script>
+  
   </body>
 </html>

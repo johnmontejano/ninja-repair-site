@@ -1,62 +1,101 @@
 * {
-    /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
+
 .sidenav-overlay {
-   background: none !important;
+  background: none !important;
 }
-#hero  {
-    background: url('https://i.postimg.cc/8z9n0SK7/bike-hero.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    padding: 8rem 0 5rem 0;
+.bikelocity-logo {
+  font-family: "Baloo 2", cursive;
 }
-#hero h5 {padding-bottom:15px;}
+
+#hero {
+  background: url("https://i.postimg.cc/8z9n0SK7/bike-hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 8rem 0 5rem 0;
+  margin-top: -65px;
+}
+#hero h5 {
+  padding-bottom: 15px;
+}
 #works {
-    float: none !important;
-    margin-left: auto;
-    margin-right: auto;
+  float: none !important;
+  margin-left: auto;
+  margin-right: auto;
 }
-#works img{
-    width: 40%;
-   
+#works h5 {
+  font-weight: 200;
+}
+#works h2 {
+  font-weight: 600;
+}
+#works img {
+  width: 60%;
 }
 #price-card {
-    padding: 2rem 3.5rem;
+  padding: 2rem 3.5rem;
+}
+#calculator h2 {
+  font-weight: 600;
+}
+#calculator h5 {
+  font-weight: 200;
+}
+#calculator h4 {
+  font-weight: 300;
 }
 
 #customers {
-    padding: 18px 10px 8px 10px;
-    margin: none;
+  padding: 18px 10px 8px 10px;
+  margin: none;
 }
 
-
-.parallax-container{    
-    color: white;
-    height: 350px;
+.parallax-container {
+  color: white;
+  height: 350px;
 }
-.parallax{
-    height: 180px;
+.parallax {
+  height: 180px;
+}
+#nav {
+  background: none;
+  box-shadow: none;
+  transition: 0.3s all;
+}
+.light-font {
+  font-weight: 200;
+}
+.changeColor {
+  background: #166ebb !important;
+}
+#get-started {
+  padding: 50px 0 0 0;
+}
+#get-started h1 {
+  font-weight: 300;
+}
+#get-started h5 {
+  font-weight: 200;
+  padding-bottom: 10px;
+}
+.picker__date-display {
+  background-color: #6d4e7a;
 }
 
-#get-started{
-    padding: 50px 0 0 0;
-    
-}
-.picker__date-display { background-color: #6d4e7a; }
-
-footer i{
-    font-size: 20px;
+footer i {
+  font-size: 20px;
 }
 footer i:hover {
-    color: rgb(19, 63, 110);
-    transition: ease 200ms;
+  color: rgb(19, 63, 110);
+  transition: ease 200ms;
 }
-#brands img{
-    width: 200px;
+#brands img {
+  width: 200px;
 }
-@media only screen and(max-width:460px){
+@media only screen and(max-width:460px) {
 }
-@media only screen and(min-width:470px){
+@media only screen and(min-width:470px) {
 }
