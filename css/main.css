@@ -1,7 +1,9 @@
 * {
   scroll-behavior: smooth;
 }
-
+body {
+  overflow: auto;
+}
 .sidenav-overlay {
   background: none !important;
 }
