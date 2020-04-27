@@ -1,26 +1,26 @@
-function myFunction() {
-    var prices = {
-        trek: {
-          tuneUp: "Price Range: $60",
-          chain: "Price Range: $35",
-          tire: "Price Range: $50",
-        }  
-      } 
-    // console.log(prices["trek"]["tuneUp"])
-    var selectBrand = document.getElementById("selectBrand").value;    
-    var selectIssue = document.getElementById("selectIssue").value;
-    var priceTitle = document.getElementById("price-title");
+// console.log(prices["trek"]["tuneUp"])
+const selectBrand = document.getElementById('selectBrand');
+const selectIssue = document.getElementById('selectIssue');
+var priceTitle = document.getElementById('price-title');
+
+selectBrand.addEventListener('change', function(e) {
+  const brand = selectBrand.value;
+  const models = Object.keys(prices[brand]);
+
+  let options = '';
+  models.forEach(function(model) {
+    options += `<option value="${model}">${model}</option>`;
+  });
+  selectIssue.innerHTML = options;
+});
+
+
+selectIssue.addEventListener('change', function(e){
+    const issue = selectIssue.value
+    const brand = selectBrand.value
     
-    if (selectBrand === "trek" && selectIssue === "tune-up") {
-        priceTitle.innerText = prices["trek"]["tuneUp"]
-
+    if (issue === undefined || brand === undefined) {
+        return;
     }
-    else if (selectBrand === "trek" && selectIssue === "chain") {
-        priceTitle.innerText = prices["trek"]["chain"]
 
-    }  
-    else if (selectIssue == "tire") {
-        priceTitle.innerText = prices["trek"]["tire"]
-    }
-}
-
+});

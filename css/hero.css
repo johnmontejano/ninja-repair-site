@@ -1,0 +1,71 @@
+/* HERO SECTION */
+#hero {
+  background: url('https://i.postimg.cc/d1mBtpD1/sample-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 8rem 0 5rem 0;
+  margin-top: -65px;
+}
+#hero h5 {
+  padding-bottom: 15px;
+}
+#hero-header {
+  
+  font-weight: 800;
+  font-size: 60px;
+  color: white;
+}
+
+#hero-subheader {
+    margin: 0;
+    font-weight: 400;
+    /* margin-bottom: 4rem; */
+    font-size: 30px;
+}
+/* BUTTONS */
+.call-to-action {
+   background: #8FBE08;
+  display: inline-block;
+  color: white;
+  border-radius: 45px;
+  padding: 15px 55px;
+  margin-bottom: 1rem;
+  font-size: 20px;
+}
+.call-to-action-2 {
+   border-color: none;
+   background: #6ba4b4;
+   display: inline-block;
+   color: white;
+   border-radius: 45px;
+   padding: 15px 55px;
+   margin-bottom: 1rem;
+   font-size: 20px;
+ }
+#repair-now-btn {
+  background: #6ba4b4;
+  display: inline-block;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 35px;
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
+#repair-now-btn:hover {
+  background: rgb(94, 146, 160);
+}
+#call-now-btn {
+    background: #8FBE08;
+    display: inline-block;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  #call-now-btn:hover {
+    background: #6B9406;
+  }
+/* MEDIA QUERIES */
+iphone

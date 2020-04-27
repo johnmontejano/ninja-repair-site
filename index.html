@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Bikelocity</title>
-  <!-- bikelocity logo font -->
+  <title>Ninja Repair</title>
+  <!-- Ninja Repair logo font -->
   <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -13,18 +12,27 @@
   <link href="/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <!-- STICKYBAR ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
+<!-- The social media icon bar -->
+<div class="icon-bar">
+    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="google"><i class="fa fa-google"></i></a>
+    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+  </div>
 <div class="navbar-fixed">
     <nav id="nav" role="navigation">
         <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="bikelocity-logo brand-logo right hide-on-med-and-up show-on-medium">Bikelocity</a>
-        <a id="logo-container" href="#" class="bikelocity-logo brand-logo left hide-on-med-and-down">Bikelocity</a>
+        <a id="logo-container" href="#" class="ninjarepair-logo brand-logo right hide-on-med-and-up show-on-medium">ninja repair</a>
+        <a id="logo-container" href="#" class="ninjarepair-logo brand-logo left hide-on-med-and-down">ninja repair</a>
         <ul class="right hide-on-med-and-down">
             <li><a href="#calculator">Repair</a></li>
             <li><a href="#connect-with-us">Stay Connected</a></li>
-            <li><a href="mailto:company@bikelocity.com">Contact</a></li>
+            <li><a href="mailto:company@ninjarepair.com">Contact</a></li>
         </ul>
   
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -39,19 +47,12 @@
 
 <section id="hero" class="section">
     <div class="container">
-        <div class="row ">
             <div class="col s12 m6 l12">
-                <h1 class="bikelocity-logo">Bikelocity</h1>
-                <h5 style="font-weight: 200;">On-demand bike repair Anytime, anywhere</h5>
-                <div class="row">
-                    <div class="col s6 l2">
-                        <a href="#calculator" class="btn btn-medium blue darken-3 waves-effect waves-light ">Repair Now</a>
-                    </div>
-                    <div class="col s6 l2">
-                        <a href="tel:415-111-1111" class="btn btn-medium green ligten-1 waves-effect waves-light ">Call now</a>
-                    </div>
-                </div>
-            </div>
+                <h3 class="ninjarepair-logo" id='hero-header'>Phone<br><span style="color: #8FBE08;">Repair</span> </h3>
+                <h5 id='hero-subheader' >at your door, within same hour</h6>
+                <h5 id='hero-subheader'style='margin-bottom:2rem;'>Serving the Bay Area</h5>
+                    <a href="#calculator" id='repair-now-btn'>Repair Now</a>
+                    <a href="tel:415-111-1111" id='call-now-btn'>Call now</a>
         </div>
        
     </div>
@@ -79,17 +80,17 @@
             <div  id="steps" class="row center">
 
                 <div class="col s12 l4 m4">
-                    <img src="https://i.postimg.cc/ryvYJPhc/undraw-Calculator-0evy.jpg" alt="">
+                    <img src="https://i.postimg.cc/3NNb4KKK/undraw-Calculator-0evy.png" alt="">
                     <h5><b>1.</b> Calculate Price</h5>
                 </div>
 
                 <div class="col s12 l4 m4">
-                    <img src="img/calendar.png"/>
+                    <img src="https://i.postimg.cc/RVVgX1nN/undraw-online-calendar-kvu2.png"/>
                     <h5><b>2.</b> Schedule Repair</h5>
                 </div>
 
                 <div class="col s12 l4 m4">
-                    <img src="img/bicycle.png" alt="">
+                    <img src="https://i.postimg.cc/x8tDB0RH/undraw-chore-list-iof3.png" alt="">
                     <h5><b>3.</b> Mechanic meets you</h5>
                 </div>
             </div>
@@ -101,7 +102,7 @@
         <div class="card" id="price-card">
             <div class="card-container">
                 <h2>Price Calculator</h2>
-                <img width="40%;" src="https://images.giant-bicycles.com/b_white,c_pad,h_400,q_80,w_600/mid7nkitgq05ujeznx1o/MY20TCRADV2-KOM_ColorA.jpg" alt="">
+                <img width="20%;" src="https://i.postimg.cc/J09ysDt3/iphonesamsung.png" alt="">
                 <h4 id="price-title">Price Range:</h4>
                 <form  name="repair" autocomplete="on" method="POST" netlify>
                     <div class="row">
@@ -169,7 +170,7 @@
                             <input type="text" id="date" placeholder="Enter Time" class="timepicker" name="time" required>
                         </div>
                     </div>
-                    <button class="btn btn-large blue darken-3 waves-effect" type="submit">Book Now</button>
+                    <button class="call-to-action" type="submit">Book Now</button>
 
             </div>
         </form>
@@ -179,27 +180,23 @@
 <!-- GET STARTED -->
     <section class="section">
         <div class="parallax-container">
-            <div class="parallax"><img  src="https://i.postimg.cc/RF0VgFZ3/bikeshop.png"></div>
+            <div class="parallax"><img  src="https://images.unsplash.com/photo-1550029402-226115b7c579?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1301&q=80"></div>
             <div class="container" id="get-started">
                 <h1>Get Started Now</h1>
-                <h5>Repairing in more than 100 cities nationwide</h5>
-                <a href="#calculator" class="btn btn-large blue darken-2">Get Started</a>
+                <h5>Repairing in the San Francisco Bay Area</h5>
+                <a href='#calculator'class="call-to-action-2" type="submit">Book Now</a>            
             </div>
         </div>
     </section>
 
 
-  <footer class="page-footer blue darken-3">
+  <footer class="page-footer">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h3 class="whitetext bikelocity-logo">bikelocity</h3>
-          <h5 class="large" id="connect-with-us" style="margin-bottom:15px;">Connect Wiith Us</h5>
+          <h3 class="whitetext ninjarepair-logo">Ninja Repair</h3>
+          <h5 class="large" style="margin-bottom:15px; ">Connect Wiith Us</h5>
           <div class="row">
-
-            <div class="col">
-                <i class="fab fa-twitter"></i>
-            </div>
             <div class="col">
                 <i class="fab fa-facebook"></i>
             </div>
@@ -207,38 +204,32 @@
                 <i class="fab fa-instagram"></i>
             </div>
             <div class="col">
-                <i class="fab fa-reddit"></i>
+                <i class="fab fa-youtube"></i>
             </div>
-
+            <div class="col">
+                <i class="fab fa-yelp"></i>
+            </div>
           </div>
+          <h6  style="margin-bottom:15px;">@ninjarepair</h6>
+
         </div>
         
         <div class="col l3 s12">
-          <h5 class="white-text">Common Services</h5>
+          <h5 class="white-text">Common Devices</h5>
           <ul>
-            <li><a class="white-text" href="#!">Tune-up</a></li>
-            <li><a class="white-text" href="#!">Chain</a></li>
-            <li><a class="white-text" href="#!">Tire Replacement Emergency</a></li>
-            <li><a class="white-text" href="#!">Brakes</a></li>
+            <li><a class="white-text" href="#calculator">iPhone 8 Plus</a></li>
+            <li><a class="white-text" href="#calculator">iPhone XR</a></li>
+            <li><a class="white-text" href="#calculator">iPhone X</a></li>
+            <li><a class="white-text" href="#calculator">iPhone XS Max</a></li>
 
           </ul>
         </div>
-        <div class="col l3 s12">
-            <h5 class="white-text">Links</h5>
-            <ul>
-              <li><a class="white-text" href="#!">Home</a></li>
-              <li><a class="white-text" href="#!">About</a></li>
-              <li><a class="white-text" href="#!">Conact</a></li>
-              <li><a class="white-text" href="#!">Repair Now</a></li>
-  
-            </ul>
-          </div>
         
       </div>
     </div>
-    <div class="footer-copyright blue darken-4">
+    <div class="footer-copyright grey">
       <div class="container">
-       All rights Reserved  <a class="blue-text text-lighten-3" href="http://materializecss.com">BIKELOCITY&copy;</a>
+       All rights Reserved  <a class="blue-text text-lighten-3" href="http://materializecss.com">ninjarepair&copy;</a>
       </div>
     </div>
   </footer>
@@ -249,6 +240,6 @@
   <script src="js/materialize.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/pricing.js"></script>
-  
+  <script src="js/data.js"></script>
   </body>
 </html>

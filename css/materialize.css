@@ -2789,7 +2789,7 @@ video.responsive-video {
 .breadcrumb i.material-icons {
   display: inline-block;
   float: left;
-  font-size: 24px;
+  font-size: px;
 }
 
 .breadcrumb:before {
@@ -4299,7 +4299,7 @@ nav i,
 nav [class^="mdi-"], nav [class*="mdi-"],
 nav i.material-icons {
   display: block;
-  font-size: 24px;
+  font-size: 35px;
   height: 56px;
   line-height: 56px;
 }
