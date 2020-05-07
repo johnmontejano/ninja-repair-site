@@ -104,7 +104,7 @@
             <div class="card-container">
                 <h2>Price Calculator</h2>
                 <img width="20%;" src="https://i.postimg.cc/J09ysDt3/iphonesamsung.png" alt="">
-                <p id="show-device"></p>
+                <h5 id="show-device"></h5>
                 <form name='repair' autocomplete='on' method='POST'><input type='hidden' name='form-name' value='repair' />
                     <div class="row">
                         <!-- SELECT MANUFACTURER/DEVICE-TYPE -->
@@ -123,18 +123,18 @@
                                 <option selected disabled>Select Model</option>
                                 
                             </select>
-                            <label>Select Issue</label>
+                            <label>Select Model</label>
                         </div>
                     </div>
                     <div class="row">
                         <!-- SELECT ISSUE -->
                         <div class="input-field col s12 l12 m12">
                             <select id='issue' name="issue" required>
-                                <!-- <option selected disabled>Select issue</option> -->
+                                <option selected disabled>Select Issue</option>
                                 <!-- select issue list     -->
 
                             </select>
-                            <label>Select Make</label>
+                            <label>Select Issue</label>
                         </div>
                        
                     </div>
@@ -251,11 +251,7 @@
   <script src="js/materialize.min.js"></script>
   <script src="js/main.js"></script>
   <script>
-    $('body').on('DOMSubtreeModified','select', function(){
-        console.log('anything')
-        dropdownSetup();
-        
-    })
+    
   </script>
   </body>
 </html>

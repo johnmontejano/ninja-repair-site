@@ -5,14 +5,15 @@ document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.sidenav');
   var instances = M.Sidenav.init(elems, {});
 });
-// SELECT DROPDOWN
-function dropdownSetup() {
-  document.addEventListener('DOMContentLoaded', function() {
-    var select = document.querySelectorAll('select');
-    var instances = M.FormSelect.init(select, {});
-  });
-}
-dropdownSetup();
+$('body').on('DOMSubtreeModified', 'select', function() {
+  const selectMan = document.getElementById('manufacturer-list');
+  const selectModel = document.getElementById('model-list');
+  const selectIssue = document.getElementById('issue');
+
+  M.FormSelect.init(selectModel, {});
+  M.FormSelect.init(selectIssue, {});
+  M.FormSelect.init(selectMan, {});
+});
 // DATEPICKER
 document.addEventListener('DOMContentLoaded', function() {
   var datepicker = document.querySelectorAll('.datepicker');
@@ -66,9 +67,8 @@ selectMan.addEventListener('change', function(e) {
     options += `<option value="${model}">${model}</option>`;
   });
   selectModel.innerHTML = options;
-  var instances = M.FormSelect.init(select, {});
-
-  console.log(options);
+  // var instances = M.FormSelect.init(select, {});
+  // console.log(options);
 });
 
 // Handles the model select/menu
