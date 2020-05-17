@@ -53,9 +53,29 @@ const showDevice = document.getElementById('show-device');
 // -----------------------------------------------------
 // Setup some event listeners
 // -----------------------------------------------------
+// -----------------------------------------------------
+// Add first option for select, man, model, and issue
+// -----------------------------------------------------
+window.addEventListener('load', function(e) {
+  const optionOne = document.createElement('option');
+  optionOne.setAttribute('selected', 'true');
+  optionOne.innerHTML = 'Select Device';
+
+  const optionTwo = document.createElement('option');
+  optionTwo.setAttribute('selected', 'true');
+  optionTwo.innerHTML = 'Select Model';
+  // -----------------------------------------------------
+  //
+  const optionThree = document.createElement('option');
+  optionThree.setAttribute('selected', 'true');
+  optionThree.innerHTML = 'Select Issue';
+
+  selectMan.add(optionOne, 0);
+  selectModel.add(optionTwo, 0);
+  selectIssue.add(optionThree, 0);
+});
 
 // handles the manufacturer select/menu
-
 selectMan.addEventListener('change', function(e) {
   // Get the manufacturer
   const man = selectMan.value;
@@ -119,7 +139,7 @@ selectIssue.addEventListener('change', function(e) {
 // I added android so that there is a choice
 const manufacturers = Object.keys(deviceDictionary);
 let options = '';
-manufacturers.forEach(function(man) {
+manufacturers.forEach((man) => {
   options += `<option value="${man}">${man}</option>`;
 });
 selectMan.innerHTML = options;

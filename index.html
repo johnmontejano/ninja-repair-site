@@ -33,6 +33,7 @@
         <ul class="right hide-on-med-and-down">
             <li><a href="#calculator">Repair</a></li>
             <li><a href="#connect-with-us">Stay Connected</a></li>
+            <li><a href="./about.html">About Us</a></li>
             <li><a href="mailto:company@ninjarepair.com">Contact</a></li>
         </ul>
   
@@ -48,14 +49,23 @@
 
 <section id="hero" class="section">
     <div class="container">
-            <div class="col s12 m6 l12">
-                <h3 class="ninjarepair-logo" id='hero-header'>Phone<br><span style="color: #8FBE08;">Repair</span> </h3>
-                <h5 id='hero-subheader' >at your door, within same hour</h6>
-                <h5 id='hero-subheader'style='margin-bottom:2rem;'>Serving the Bay Area</h5>
-                    <a href="#calculator" id='repair-now-btn'>Repair Now</a>
-                    <a href="tel:415-111-1111" id='call-now-btn'>Call now</a>
+        <div class="row">
+            <div class="col s12 m8 l12">
+                <h3 class="ninjarepair-logo" id='hero-header'>Phone<br><span style="color: #58cd5e;">Repair</span> </h3>
+                <h6 id='hero-subheader' >at your door, within same hour</h6>
+                <h6 id='hero-subheader'style='margin-bottom:2rem;'>Serving the Bay Area</h6>
+
+                <a href="#calculator" class="btn light-blue darken-3">Repair Now</a>
+                <a href="tel:415-111-1111" class="btn green darken-1">Call now</a>
+
+            </div>
+            
         </div>
-       
+        
+        <div class="row right">
+                <img src="https://i.postimg.cc/Y9kKqG0D/yelp.png" width='60px'>
+                <h6>Trusted by Yelp</h6>
+        </div>
     </div>
 
     
@@ -81,34 +91,39 @@
             <div  id="steps" class="row center">
 
                 <div class="col s12 l4 m4">
-                    <img src="https://i.postimg.cc/3NNb4KKK/undraw-Calculator-0evy.png" alt="">
-                    <h5><b>1.</b> Calculate Price</h5>
+                    <img src="https://i.postimg.cc/8CHZdS2y/step1.png" alt="">
+                    <h3>Step 1</h3>
+                    <h5> Calculate Price</h5>
                 </div>
 
                 <div class="col s12 l4 m4">
-                    <img src="https://i.postimg.cc/RVVgX1nN/undraw-online-calendar-kvu2.png"/>
-                    <h5><b>2.</b> Schedule Repair</h5>
+                    <img src="https://i.postimg.cc/vTzPhdx8/step2.png"/>
+                    <h3>Step 2</h3>
+                    <h5>Schedule Repair</h5>
                 </div>
 
                 <div class="col s12 l4 m4">
-                    <img src="https://i.postimg.cc/x8tDB0RH/undraw-chore-list-iof3.png" width="90%">
-                    <h5><b>3.</b> Mechanic meets you</h5>
+                    <img src="https://i.postimg.cc/6QXvW41S/step3.png" >
+                    <h3>Step 3</h3>
+                    <h5>Mechanic meets you</h5>
                 </div>
             </div>
 </section>
-<br id='calculator'>
+<br>
 <!-- PRICE CALCULATOR -->
 <section class="section">
-    <div class="container center">
-        <div class="card" id="price-card">
+
+    <div class="container center" style="padding: 2rem;">
+        <h1 style="text-align: left; margin-bottom: 4rem;">Price Calculator</h1>
+
+        <div class=""id="price-card" >
             <div class="card-container">
-                <h2>Price Calculator</h2>
-                <img width="20%;" src="https://i.postimg.cc/J09ysDt3/iphonesamsung.png" alt="">
+                <img width="120px" src="https://i.postimg.cc/J09ysDt3/iphonesamsung.png" alt="">
                 <h5 id="show-device"></h5>
                 <form name='repair' autocomplete='on' method='POST'><input type='hidden' name='form-name' value='repair' />
                     <div class="row">
                         <!-- SELECT MANUFACTURER/DEVICE-TYPE -->
-                        <div class="input-field col s12 l6 m6">
+                        <div class="input-field col s12 l4 m4">
                             <select id="manufacturer-list" name="man" required>
                                 <option value="select">Select Make</option>
                                 
@@ -118,70 +133,61 @@
                         </div>
                         
                         <!-- SELECT MODEL -->
-                        <div class="input-field col s12 l6 m6">
+                        <div class="input-field col s12 l4 m4">
                             <select id="model-list" name="model" required>
                                 <option selected disabled>Select Model</option>
                                 
                             </select>
-                            <label>Select Model</label>
                         </div>
-                    </div>
-                    <div class="row">
-                        <!-- SELECT ISSUE -->
-                        <div class="input-field col s12 l12 m12">
+
+                        <div class="input-field col s12 l4 m4">
                             <select id='issue' name="issue" required>
                                 <option selected disabled>Select Issue</option>
                                 <!-- select issue list     -->
-
                             </select>
                             <label>Select Issue</label>
                         </div>
-                       
                     </div>
+
                     <h5>Customer info</h5>
                     <div class="row">
-                            <div class="row ">
-                                <div class="input-field col s12">
-                                    <i class="material-icons prefix">account_circle</i>
-                                    <input id="first_name" type="text" class="validate" required name="name">
-                                    <label for="first_name">First Name</label>
-                                </div>
-                                <div class="input-field col s12">
-                                    <i class="material-icons prefix">phone</i>
-                                    <input id="icon_telephone" type="tel" class="validate" required name="phone">
-                                    <label for="icon_telephone">Telephone</label>
-                                </div>
-                            </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="first_name" type="text" class="validate" required name="name">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="icon_telephone" type="tel" class="validate" required name="phone">
+                            <label for="icon_telephone">Telephone</label>
+                        </div>
                     </div>
                     <div class="row">
-                            <div class="row ">
-                                <div class="input-field col l6 s12">
-                                    <i class="material-icons prefix">mail</i>
-                                    <input id="email" type="email" class="validate" required name="email">
-                                    <label for="email">Email</label>
-                                </div>
-                                <div class="input-field col l6 s12">
-                                    <i class="material-icons prefix">apartment</i>
-                                    <input id="address_field" type="text" class="validate" required name="address">
-                                    <label for="address_field">Address</label>
-                                </div>
-                            </div>
+                        <div class="input-field col l6 s6">
+                            <i class="material-icons prefix">mail</i>
+                            <input id="email" type="email" class="validate" required name="email">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field col l6 s6">
+                            <i class="material-icons prefix">apartment</i>
+                            <input id="address_field" type="text" class="validate" required name="address">
+                            <label for="address_field">Address</label>
+                        </div>
                     </div>
 
                     <h5>Time & Date</h5>
                     <div class="row center">
-                        <div class="input-field col s12 l6">
+                        <div class="input-field col s6 l6">
                             <i class="material-icons prefix">event</i>
                             <input type="text" id="date" placeholder="Enter Date" class="datepicker" name="date" required>
                         </div>
-                        <div class="input-field col s12 l6">
+                        <div class="input-field col s6 l6">
                             <i class="material-icons prefix">schedule</i>
                             <input type="text" id="date" placeholder="Enter Time" class="timepicker" name="time" required>
                         </div>
                     </div>
-                    <button class="call-to-action" type="submit">Book Now</button>
+                    <a class="btn-large green darken-1" type="submit">Book Now</a>
 
-            </div>
         </form>
         </div>
     </div>
@@ -193,17 +199,17 @@
             <div class="container" id="get-started">
                 <h1>Get Started Now</h1>
                 <h5>Repairing in the San Francisco Bay Area</h5>
-                <a href='#calculator'class="call-to-action-2" type="submit">Book Now</a>            
+                <a href='#calculator'class="btn-large light-blue darken-3" type="submit">Book Now</a>            
             </div>
         </div>
     </section>
 
 
-  <footer class="page-footer">
+  <footer class="page-footer  light-blue darken-3">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h3 class="whitetext ninjarepair-logo">Ninja Repair</h3>
+          <h3>Ninja Repair</h3>
           <h5 class="large" style="margin-bottom:15px; ">Connect Wiith Us</h5>
           <div class="row">
             <div class="col">
@@ -236,7 +242,7 @@
         
       </div>
     </div>
-    <div class="footer-copyright grey">
+    <div class="footer-copyright  light-blue darken-4">
       <div class="container">
        All rights Reserved  <a class="blue-text text-lighten-3" href="http://materializecss.com">ninjarepair&copy;</a>
       </div>
