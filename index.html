@@ -17,36 +17,30 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<!-- The social media icon bar -->
-<div class="icon-bar">
-    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-    <a href="#" class="google"><i class="fa fa-google"></i></a>
-    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-    <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
-  </div>
-<div class="navbar-fixed">
-    <nav id="nav" role="navigation">
-        <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="ninjarepair-logo brand-logo right hide-on-med-and-up show-on-medium">ninja repair</a>
-        <a id="logo-container" href="#" class="ninjarepair-logo brand-logo left hide-on-med-and-down">ninja repair</a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="#calculator">Repair</a></li>
-            <li><a href="#connect-with-us">Stay Connected</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="mailto:company@ninjarepair.com">Contact</a></li>
-        </ul>
-  
-        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul style="display: flex; flex-direction: column;"id="nav-mobile" class="sidenav">
-            <li><a href="#">Repair</a></li>
-            <li><a href="#connect-with-us">Stay Connected</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        </div>
-    </nav>
- </div>
 
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Ninja Repair</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#calculator">Repair</a></li>
+            <li><a href="#footer">Stay Connected</a></li>
+            
+          </ul>
+    
+          <ul id="nav-mobile" class="sidenav">
+            <li><a href="#calculator">Repair</a></li>
+            <li><a href="#footer">Stay Connected</a></li>
+          </ul>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+      </nav>
+    <!-- The social media icon bar -->
+<div class="icon-bar">
+        <a href="https://www.facebook.com/NinjaRepair-108981267482965/?ref=page_internal" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.yelp.com/biz/ninja-repair-san-francisco-2?osq=ninjarepair" target="_blank" class="youtube"><i class="fa fa-yelp"></i></a>
+        <!-- <a href="#" class="google"><i class="fa fa-google"></i></a> -->
+        <a href="https://www.instagram.com/ninjarepairsf/"target="_blank" class="linkedin"><i class="fa fa-instagram"></i></a>
+        <!-- <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> -->
+      </div>
 <section id="hero" class="section">
     <div class="container">
         <div class="row">
@@ -55,8 +49,8 @@
                 <h6 id='hero-subheader' >at your door, within same hour</h6>
                 <h6 id='hero-subheader'style='margin-bottom:2rem;'>Serving the Bay Area</h6>
 
-                <a href="#calculator" class="btn light-blue darken-3">Repair Now</a>
-                <a href="tel:415-111-1111" class="btn green darken-1">Call now</a>
+                <a href="#calculator" class="btn light-blue darken-3">Repair Now <i class="fas fa-tools"></i></a>
+                <a href="tel:415-361-8929" class="btn green darken-1">Call now <i class="fas fa-phone"></i> </a>
 
             </div>
             
@@ -109,7 +103,7 @@
                 </div>
             </div>
 </section>
-<br>
+<br id='calculator'>
 <!-- PRICE CALCULATOR -->
 <section class="section">
 
@@ -120,12 +114,12 @@
             <div class="card-container">
                 <img width="120px" src="https://i.postimg.cc/J09ysDt3/iphonesamsung.png" alt="">
                 <h5 id="show-device"></h5>
-                <form name='repair' autocomplete='on' method='POST'><input type='hidden' name='form-name' value='repair' />
+                <form name='repair' autocomplete='on' method='POST' data-netlify="true">
+                    <input type='hidden' name='form-name' value='repair' />
                     <div class="row">
                         <!-- SELECT MANUFACTURER/DEVICE-TYPE -->
                         <div class="input-field col s12 l4 m4">
                             <select id="manufacturer-list" name="man" required>
-                                <option value="select">Select Make</option>
                                 
                                 <!-- select manufacturer    -->
                             </select>
@@ -135,14 +129,12 @@
                         <!-- SELECT MODEL -->
                         <div class="input-field col s12 l4 m4">
                             <select id="model-list" name="model" required>
-                                <option selected disabled>Select Model</option>
                                 
                             </select>
                         </div>
 
                         <div class="input-field col s12 l4 m4">
                             <select id='issue' name="issue" required>
-                                <option selected disabled>Select Issue</option>
                                 <!-- select issue list     -->
                             </select>
                             <label>Select Issue</label>
@@ -151,24 +143,24 @@
 
                     <h5>Customer info</h5>
                     <div class="row">
-                        <div class="input-field col s6">
+                        <div class="input-field col s12 l6">
                             <i class="material-icons prefix">account_circle</i>
                             <input id="first_name" type="text" class="validate" required name="name">
                             <label for="first_name">First Name</label>
                         </div>
-                        <div class="input-field col s6">
+                        <div class="input-field col s12 l6">
                             <i class="material-icons prefix">phone</i>
                             <input id="icon_telephone" type="tel" class="validate" required name="phone">
                             <label for="icon_telephone">Telephone</label>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field col l6 s6">
+                        <div class="input-field col s12 l6">
                             <i class="material-icons prefix">mail</i>
                             <input id="email" type="email" class="validate" required name="email">
                             <label for="email">Email</label>
                         </div>
-                        <div class="input-field col l6 s6">
+                        <div class="input-field col s12 l6">
                             <i class="material-icons prefix">apartment</i>
                             <input id="address_field" type="text" class="validate" required name="address">
                             <label for="address_field">Address</label>
@@ -186,7 +178,7 @@
                             <input type="text" id="date" placeholder="Enter Time" class="timepicker" name="time" required>
                         </div>
                     </div>
-                    <button class="btn-large green darken-1" type="submit">Book Now</button>
+                    <button class="btn-large green darken-1" type="submit">Book Now <i class="fas fa-arrow-right"></i></button>
 
         </form>
         </div>
@@ -205,7 +197,7 @@
     </section>
 
 
-  <footer class="page-footer  light-blue darken-3">
+  <footer id='footer' class="page-footer  light-blue darken-3">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
@@ -213,19 +205,17 @@
           <h5 class="large" style="margin-bottom:15px; ">Connect Wiith Us</h5>
           <div class="row">
             <div class="col">
-                <i class="fab fa-facebook"></i>
+               <a href="https://www.facebook.com/NinjaRepair-108981267482965/?ref=page_internal" target="_blank" ><i class="fab fa-facebook"></i></a> 
             </div>
             <div class="col">
-                <i class="fab fa-instagram"></i>
+               <a href="https://instagram.com/ninjarepairsf" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
+       
             <div class="col">
-                <i class="fab fa-youtube"></i>
-            </div>
-            <div class="col">
-                <i class="fab fa-yelp"></i>
+              <a href="https://www.yelp.com/biz/ninja-repair-san-francisco-2?osq=ninjarepair" target="_blank"><i class="fab fa-yelp"></i></a>
             </div>
           </div>
-          <h6  style="margin-bottom:15px;">@ninjarepair</h6>
+          <h6  style="margin-bottom:15px;">@ninjarepairsf</h6>
 
         </div>
         
@@ -254,10 +244,8 @@
   
   <script src="js/data.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.min.js"></script>
+  <script src="js/materialize.js"></script>
   <script src="js/main.js"></script>
-  <script>
-    
-  </script>
+  <script src="js/init.js"></script>
   </body>
 </html>

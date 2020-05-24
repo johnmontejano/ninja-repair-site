@@ -1,10 +1,11 @@
 // ----------------------------------------------------
 // Initiliaze materialize components
 // ----------------------------------------------------
-document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.sidenav');
-  var instances = M.Sidenav.init(elems, {});
-});
+(function($) {
+  $(function() {
+    $('.sidenav').sidenav();
+  }); // end of document ready
+})(jQuery);
 $('body').on('DOMSubtreeModified', 'select', function() {
   const selectMan = document.getElementById('manufacturer-list');
   const selectModel = document.getElementById('model-list');
@@ -41,7 +42,15 @@ $(document).ready(function() {
     });
   });
 });
+$('body').on('DOMSubtreeModified', 'select', function() {
+  const selectMan = document.getElementById('manufacturer-list');
+  const selectModel = document.getElementById('model-list');
+  const selectIssue = document.getElementById('issue');
 
+  M.FormSelect.init(selectModel, {});
+  M.FormSelect.init(selectIssue, {});
+  M.FormSelect.init(selectMan, {});
+});
 // ----------------------------------------------------
 // Get reference to the DOM elements
 // ----------------------------------------------------
