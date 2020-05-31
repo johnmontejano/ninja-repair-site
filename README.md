@@ -1,2 +1,2 @@
-<h1>ninjarepair</h1>
-<p>On-demand irepair service</p>
+<h1>ninja bike repair</h1>
+<p>On-demand bike repair service</p>
