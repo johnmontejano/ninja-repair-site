@@ -125,7 +125,8 @@ a {
   font-weight: 600;
 }
 #works img {
-  width: 90%;
+  max-width: 300px;
+  max-height: 200px;
 }
 /* CALCULATOR */
 #price-card {
