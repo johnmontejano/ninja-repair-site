@@ -54,6 +54,7 @@ input.invalid {
 
 @media only screen and (max-width: 1150px) {
   #regForm {
+    box-shadow: none;
     background-color: #ffffff;
     margin: 10px auto;
     padding: 40px;
