@@ -1,5 +1,6 @@
 @import url('hero.css');
 @import url('Nav.css');
+@import url('book.css');
 @font-face {
   font-family: 'circular';
   src: url(../CircularStd-Medium.ttf);

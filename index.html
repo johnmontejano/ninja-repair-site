@@ -134,82 +134,91 @@
 <!-- PRICE CALCULATOR -->
 <section class="section">
 
-    <div class="container center" style="padding: 2rem;">
-        <h1 style="text-align: left; margin-bottom: 4rem;" data-aos="fade-up">Price Calculator</h1>
+   
+      <form id="regForm" action="" method="POST" name="repair" data-netlify="true">
 
-        <div class=""id="price-card" >
-            <div class="card-container">
-                <img width="120px" src="https://i.postimg.cc/J09ysDt3/iphonesamsung.png" alt="">
-                <h5 id="show-device"></h5>
-                <form name='repair' autocomplete='on' method='POST' data-netlify="true">
-                    <input type='hidden' name='form-name' value='repair' />
-                    <div class="row">
-                        <!-- SELECT MANUFACTURER/DEVICE-TYPE -->
-                        <div class="input-field col s12 l4 m4">
-                            <select id="manufacturer-list" name="man" required>
-                                
-                                <!-- select manufacturer    -->
-                            </select>
-                            <label>Select Make</label>
-                        </div>
-                        
-                        <!-- SELECT MODEL -->
-                        <div class="input-field col s12 l4 m4">
-                            <select id="model-list" name="model" required>
-                                
-                            </select>
-                        </div>
-
-                        <div class="input-field col s12 l4 m4">
-                            <select id='issue' name="issue" required>
-                                <!-- select issue list     -->
-                            </select>
-                            <label>Select Issue</label>
-                        </div>
-                    </div>
-
-                    <h5>Customer info</h5>
-                    <div class="row">
-                        <div class="input-field col s12 l6">
-                            <i class="material-icons prefix">account_circle</i>
-                            <input id="first_name" type="text" class="validate" required name="name">
-                            <label for="first_name">First Name</label>
-                        </div>
-                        <div class="input-field col s12 l6">
-                            <i class="material-icons prefix">phone</i>
-                            <input id="icon_telephone" type="tel" class="validate" required name="phone">
-                            <label for="icon_telephone">Telephone</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12 l6">
-                            <i class="material-icons prefix">mail</i>
-                            <input id="email" type="email" class="validate" required name="email">
-                            <label for="email">Email</label>
-                        </div>
-                        <div class="input-field col s12 l6">
-                            <i class="material-icons prefix">apartment</i>
-                            <input id="address_field" type="text" class="validate" required name="address">
-                            <label for="address_field">Address</label>
-                        </div>
-                    </div>
-
-                    <h5>Time & Date</h5>
-                    <div class="row center">
-                        <div class="input-field col s6 l6">
-                            <i class="material-icons prefix">event</i>
-                            <input type="text" id="date" placeholder="Enter Date" class="datepicker" name="date" required>
-                        </div>
-                        <div class="input-field col s6 l6">
-                            <i class="material-icons prefix">schedule</i>
-                            <input type="text" id="date" placeholder="Enter Time" class="timepicker" name="time" required>
-                        </div>
-                    </div>
-                    <button class="btn-large green darken-1" type="submit">Book Now <i class="fas fa-arrow-right"></i></button>
-
-        </form>
+        <div class="tab">
+            <h1>Fix Your Model</h1>
+    
+            <div class="input-field col s12 l4 m4">
+                <select id="manufacturer-list" name="man" required>
+                    
+                    <!-- select manufacturer    -->
+                </select>
+                <label>Select Make</label>
+            </div>
+            
+            <!-- SELECT MODEL -->
+            <div class="input-field col s12 l4 m4">
+                <select id="model-list" name="model" required>
+                    
+                </select>
+            </div>
+    
+            <div class="input-field col s12 l4 m4">
+                <select id='issue' name="issue" required>
+                    <!-- select issue list     -->
+                </select>
+                <label>Select Issue</label>
+            </div>
+            <h5 id="show-device"></h5>
         </div>
-    </div>
+        <div class="tab">
+          <h1>Contact Info</h1>
+          <div class="input-field">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="first_name" type="text" class="validate" required name="name">
+              <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field">
+              <i class="material-icons prefix">phone</i>
+              <input id="icon_telephone" type="tel" class="validate" required name="phone">
+              <label for="icon_telephone">Telephone</label>
+          </div>
+          <div class="input-field col s12 l6">
+              <i class="material-icons prefix">mail</i>
+              <input id="email" type="email" class="validate" required name="email">
+              <label for="email">Email</label>
+          </div>
+          <div class="input-field col s12 l6">
+              <i class="material-icons prefix">apartment</i>
+              <input id="address_field" type="text" class="validate" required name="address">
+              <label for="address_field">Address</label>
+          </div>
+        </div>
+    
+        <div class="tab">
+          <h1>Time and Date</h1>
+          <div class="input-field col s6 l6">
+              <i class="material-icons prefix">event</i>
+              <input type="text" id="date" placeholder="Enter Date" class="datepicker" name="date" required>
+          </div>
+          <div class="input-field col s6 l6">
+              <i class="material-icons prefix">schedule</i>
+              <input type="text" id="date" placeholder="Enter Time" class="timepicker" name="time" required>
+          </div>
+        </div>
+    
+        <div style="overflow: auto;">
+          <div style="float: right;">
+            <button type="button" class="btn green darken-1" id="prevBtn" onclick="nextPrev(-1)">
+              Previous
+            </button>
+            <button type="button" class="btn blue darken-1" id="nextBtn" onclick="nextPrev(1)">
+              Previous
+            </button>
+          </div>
+        </div>
+    
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align:center;margin-top:40px;">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+      </form>
+
 </section>
 
 <!-- GET STARTED -->
