@@ -1,0 +1,132 @@
+#price-card {
+  padding: 3rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+}
+#price-card h3 {
+  text-align: left;
+  margin: 2rem 0 5rem 3rem;
+}
+
+#customers {
+  padding: 18px 10px 8px 10px;
+  margin: none;
+}
+
+.parallax-container {
+  color: white;
+  height: 350px;
+}
+.parallax {
+  height: 180px;
+}
+#nav {
+  background: none;
+  box-shadow: none;
+  transition: 0.3s all;
+}
+.light-font {
+  font-weight: 200;
+}
+.changeColor {
+  background: #0269a9 !important;
+}
+#get-started {
+  padding: 50px 0 0 0;
+}
+#get-started h1 {
+  font-weight: 300;
+}
+#get-started h5 {
+  font-weight: 200;
+  padding-bottom: 10px;
+}
+.picker__date-display {
+  background-color: #6ba4b4;
+}
+
+/* Style the input fields */
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #0269a9;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+  padding: 30px;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #0269a9;
+}
+#regForm h1 {
+  padding-bottom: 25px;
+}
+#regForm h3 {
+  font-family: sa
+  font-weight: lighter;
+}
+@media only screen and (max-width: 600px) {
+  #price-card {
+    padding: 0;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+  }
+  #regForm {
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 10px;
+    width: 90%;
+    min-width: 300px;
+  }
+}
+@media only screen and (min-width: 661px) {
+  #price-card {
+    padding: 0rem;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+  }
+  #regForm {
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 0;
+    width: 65%;
+    min-width: 300px;
+  }
+  #regForm select {
+    width: 80px;
+  }
+}

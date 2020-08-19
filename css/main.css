@@ -1,6 +1,9 @@
 @import url('hero.css');
 @import url('Nav.css');
 @import url('book.css');
+@import url('why-us.css');
+@import url('buttons.css');
+@import url('calculator.css');
 @font-face {
   font-family: 'circular';
   src: url(../CircularStd-Medium.ttf);
@@ -37,6 +40,16 @@ h6 {
   font-family: circular;
   font-weight: normal;
 }
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
 /* {
   font-family: Helvetica;
   font-weight: 200;
@@ -59,7 +72,9 @@ a {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-
+nav {
+  background: #0277bd !important;
+}
 /* Style the icon bar links */
 .icon-bar a {
   transition: none;
