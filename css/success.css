@@ -1,0 +1,15 @@
+#success {
+  text-align: center;
+  padding: 50px 80px 50px 80px;
+}
+.success-container {
+  background: darkgray;
+  border-radius: 5px;
+
+  color: white;
+  padding: 20px;
+}
+.success-container h5 {
+  font-family: sans-serif;
+  font-weight: 100;
+}
